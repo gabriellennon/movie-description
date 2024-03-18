@@ -1,27 +1,37 @@
-# FilmDescription
+# Movie Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
-## Development server
+Responsive SPA for searching movie information based on search by name, providing title, description, cover, rating, and various other functionalities of the desired movie.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## User Journey in the APP
 
-## Code scaffolding
+The user enters the system and types the name of the desired movie in the search bar. Upon clicking search, the movie API is called to retrieve movie data. Meanwhile, the user will receive visual feedback indicating that it is loading, shown through a skeleton. After receiving the response, it will indicate that everything is correct. If an error occurs, a screen indicating that something is wrong will be shown, and the user can try the search again.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Dependencies
 
-## Build
+- [Angular](https://angular.io/).
+- [SCSS](https://sass-lang.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Karma](https://karma-runner.github.io/latest/index.html)
+- [Jasmine](https://jasmine.github.io/)
+- [Boostrap](https://getbootstrap.com/)
+- [OMDB API ](https://www.omdbapi.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Installation and Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+# clone the project
+git clone https://github.com/gabriellennon/ignite-timer.git
 
-## Running end-to-end tests
+# install dependencies
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Create your archive envorment.ts and add your apiKey follow the example of env.example archive
 
-## Further help
+# Run the app
+ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Run the unit test
+ng test
+```
