@@ -1,0 +1,21 @@
+.container-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 6rem;
+
+  img {
+    width: 10rem;
+    opacity: 0.85;
+  }
+
+  div {
+    text-align: center;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

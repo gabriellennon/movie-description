@@ -1,0 +1,22 @@
+<section class="container text-center container-title-movie">
+  <h1>Discover Your Favorite Movie</h1>
+  <p>Explore and uncover comprehensive details about any movie you desire. From titles and descriptions to release years and more, embark on a cinematic journey with us!</p>
+
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="searchQuery"
+        (ngModelChange)="emitSearchQuery()"
+        aria-label="search movie"
+        aria-describedby="inputGroup-sizing-sm"
+        placeholder="Write the name of the movie"
+      />
+    </div>
+    <div class="col-2 d-grid gap-2 d-md-flex justify-content-md-end ">
+      <button type="submit" (click)="search.emit()" class="btn btn-primary me-md-2">Search</button>
+      <button type="button" (click)="reset.emit()" class="btn btn-outline-secondary">Reset</button>
+    </div>
+  </div>
+</section>

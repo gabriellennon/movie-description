@@ -1,0 +1,41 @@
+.container-app {
+  min-height: 100vh;
+}
+
+.container-title-movie {
+  margin-top: 2rem;
+}
+
+.content-description {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.content-review {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.card-movie {
+  width: 24rem;
+
+  img {
+    width: 24rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-description {
+    grid-template-columns: auto;
+  }
+
+  .card-movie {
+    width: 16rem;
+
+  img {
+    width: 16rem;
+  }
+  }
+}

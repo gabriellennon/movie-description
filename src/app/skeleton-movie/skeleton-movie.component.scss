@@ -1,0 +1,11 @@
+.container-skeleton {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.movie-banner {
+  height: 24rem;
+  width: 24rem;
+  border-radius: 6px;
+}
