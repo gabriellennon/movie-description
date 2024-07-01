@@ -22,7 +22,7 @@ The user enters the system and types the name of the desired movie in the search
 
 ```sh
 # clone the project
-git clone https://github.com/gabriellennon/ignite-timer.git
+git clone https://github.com/gabriellennon/movie-description.git
 
 # install dependencies
 npm install
